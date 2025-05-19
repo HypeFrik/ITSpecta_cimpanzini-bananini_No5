@@ -2,6 +2,8 @@ stok = int()
 pendapatan = int()
 
 def tambahStok():
+    global stok
+    global pendapatan
     stok += 100
     for i in range(70):
         pendapatan += 55000 - 50000
@@ -15,7 +17,7 @@ def tampilPendapatan():
     print("Pendapatan: Rp", pendapatan)
 
 while(True):
-    pilihan = int(input("1. Tambah stok\n2.Tampilkan total stok\n3.Tampilkan Pendapatan Bersih"))
+    pilihan = int(input("1. Tambah stok\n2.Tampilkan total stok\n3.Tampilkan Pendapatan Bersih\n"))
     if pilihan < 1 or pilihan > 3:
         continue
     if pilihan == 1:
